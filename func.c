@@ -1,3 +1,4 @@
+//to find greatest among three variables
 #include <stdio.h>
 int greatest(int,int,int);
 void main()
@@ -26,4 +27,5 @@ int greatest(int x,int y,int z)
 	}
 		
 }
+
 
