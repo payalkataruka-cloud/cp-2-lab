@@ -16,7 +16,9 @@ struct employee
 }
 main()
 {
-	struct employee e[size];
+	char d;
+	int c=0;
+    struct employee e[size];
 	printf("enter details of employee:");
 	int i;
 	for(i=0;i<size;i++)
@@ -31,6 +33,15 @@ main()
 	{
 		printf("\n NAME:%s\n E_ID:%s\n PHN NO.:%ld\n DEP:%s\n DEP_ID:%s",&e[i].e_id,&e[i].ph,&e[i].d1.dep,&e[i].d1.d_id);
 	}
+	printf("enter the department name to count:");
+    scanf("%c",&d);
+	for(i=0;i<size;i++)
+	{
+		if(strcmp(e[i].d1.dep,d)==0)
+			c++;
+	}
+	printf("the no of employee in department %c is %d",d,c);
 
 }
+
 
